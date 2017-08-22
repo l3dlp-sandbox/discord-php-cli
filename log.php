@@ -13,8 +13,6 @@ $API_URI = 'https://discordapp.com/api/webhooks/<webhook-id>/<webhook-token>';
 use \DiscordWebhooks\Client as DiscordWebhook;
 
 $discord = new DiscordWebhook($API_URI);
-$discord->name('The Ultimate Bot');
-$discord->avatar('');
 $discord->send(trim($MSG)); 
 
 
